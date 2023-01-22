@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import { onMount } from "svelte";
   import { account } from "../store";
 
@@ -23,6 +23,6 @@
   });
 
   console.log("layout script finish");
-</script>
+</script> -->
 
 <slot />

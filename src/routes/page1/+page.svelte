@@ -18,11 +18,24 @@
   }, 1000);
 </script> -->
 <script>
-  import { text } from "../../store";
-  console.log(text);
+  import { text, objTest, arrTest } from "../../store";
+
+  console.log("text : ", $text);
+  console.log("objTest : ", $objTest);
+  console.log("arrTest : ", $arrTest);
 
   text.update((n) => "QweAsd");
+  objTest.update((n) => {
+    n.name = "Alex";
+    return n;
+  });
+  arrTest.update((n) => {
+    n.push(1);
+    return n;
+  });
 </script>
 
 <div>dick</div>
 <div>{$text}</div>
+<div>{JSON.stringify($objTest)}</div>
+<div>{$arrTest}</div>

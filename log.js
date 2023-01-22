@@ -1,5 +1,4 @@
-var obj = {};
-function addParam() {
-  obj.a = 1;
-}
-console.log(obj.a, addParam());
+var obj1 = {};
+
+console.log(obj1);
+obj1.a = 2;
